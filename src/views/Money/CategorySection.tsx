@@ -10,15 +10,20 @@ const Wrapper = styled.section`
     padding: 16px 0;position: relative;
     &.selected::after{
       content: '';display:block;background: #333;
-      height: 3px;position: absolute;bottom: 0px;
-      width: 100%;left: 0px;
+      height: 3px;position: absolute;bottom: 0;
+      width: 100%;left: 0;
       }
     }
   }
   
 `
-const CategorySection:React.FC = () => {
-  const [category,setCategory] = useState('-')
+
+type Props = {
+  value:'-' | '+';
+  onChange:(value:'-' | '+')=>void
+}
+const CategorySection:React.FC<Props> = (props) => {
+  const category = props.value
   const [categoryList] = useState<('-' | '+')[]>(['-','+'])
   const categoryMap = {'-':'支出','+':'收入'}
   return(
@@ -27,7 +32,7 @@ const CategorySection:React.FC = () => {
         {categoryList.map(c =>
           <li key={c}
             className={category === c ? 'selected' : ''}
-              onClick={()=>{setCategory(c)}}
+              onClick={()=>{props.onChange(c)}}
           >{categoryMap[c]}</li>
         )}
       </ul>
