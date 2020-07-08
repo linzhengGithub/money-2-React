@@ -34,3 +34,6 @@ body{
   overflow: hidden;
   text-overflow: ellipsis;
 }
+button,input{
+  font: inherit;
+}
