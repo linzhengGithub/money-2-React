@@ -27,7 +27,7 @@ function Money() {
   }
   return (
     <MyLayout>
-      {/*{selected.tagIds.join(',')}*/}
+      {selected.tagIds.join(',')}
       {/*<hr/>*/}
       {/*{selected.note}*/}
       {/*<hr/>*/}
