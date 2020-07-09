@@ -21,7 +21,7 @@ const NotesSection: React.FC<Props> = (props) => {
                label="备注"
                placeholder="在这里添加备注"
                value={note}
-               onChange={onChange}>
+               onChange={onChange}>//从非受控组件变成受控组件
           {/*<span>备注</span>*/}
           {/*<input type="text" placeholder="在这里添加备注"*/}
           {/*       defaultValue={note}//非受控组件*/}
