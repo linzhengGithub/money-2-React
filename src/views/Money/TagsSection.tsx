@@ -37,7 +37,7 @@ const TagsSection:React.FC<Props> = (props) => {
   const selectedTagIds = props.value
   const onAddTag = () =>{
     const tagName = window.prompt('新增的标签名是:')
-    if(tagName!==null){
+    if(tagName!==null && tagName !== ''){
       setTags([...tags,{id:createId(),name:tagName}])
     }
   }
