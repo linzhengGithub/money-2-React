@@ -8,8 +8,8 @@ const Wrapper = styled.section`
   display:flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: flex-end;
   align-items: flex-start;
+  justify-content: flex-end;
   >ol{
     margin-left: -12px;
     >li{
@@ -56,13 +56,13 @@ const TagsSection:React.FC<Props> = (props) => {
   }
   return (
     <Wrapper>
-      <ol>
-        {tags.map(tag =>
-          <li key={tag.id}
-          onClick={()=>onToggleTag(tag.id)}
-          className={getClass(tag.id)}
-        >{tag.name}</li>)}
-      </ol>
+        <ol>
+          {tags.map(tag =>
+            <li key={tag.id}
+                onClick={()=>onToggleTag(tag.id)}
+                className={getClass(tag.id)}
+            >{tag.name}</li>)}
+        </ol>
       <button onClick={onAddTag}>新增按钮</button>
     </Wrapper>
   )
