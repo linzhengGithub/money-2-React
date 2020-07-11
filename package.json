@@ -1,6 +1,7 @@
 {
   "name": "morney-2",
   "version": "0.1.0",
+  "homepage": "https://linzhengGithub.github.io/money-2-React/",
   "private": true,
   "dependencies": {
     "@babel/core": "7.9.0",

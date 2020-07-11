@@ -14,44 +14,38 @@ const Wrapper = styled.section`
   }
   >.pad{
     >button{
-      font-size: 18px;width: 20%;line-height:64px;border:none;
+      font-size: 18px;width: 25%;line-height:64px;border:none;
       float: left;
       &.ok{height: 128px;float: right;}
+      &.zero{width: 50%}
       &:nth-child(1){
         background: #f2f2f2;
       }
       &:nth-child(2),
-      &:nth-child(6){
+      &:nth-child(5){
         background: #E0E0E0;
       }
       &:nth-child(3),
-      &:nth-child(7),
-      &:nth-child(11){
+      &:nth-child(6),
+      &:nth-child(9){
         background: #D3D3D3;
       }
       &:nth-child(4),
-      &:nth-child(8),
-      &:nth-child(12),
-      &:nth-child(16){
+      &:nth-child(7),
+      &:nth-child(10){
         background: #C1C1C1;
       }
-      &:nth-child(5),
-      &:nth-child(9),
-      &:nth-child(13),
-      &:nth-child(17){
-        background: #B7B7B8;
+      &:nth-child(8),
+      &:nth-child(11),
+      &:nth-child(13){
+        background: #B8B8B8;
       }
-      &:nth-child(10),
-      &:nth-child(14),
-      &:nth-child(18){
-        background: #AAA8AA;
-      }
-      &:nth-child(19){
-        background: #A9A9A9;
+      &:nth-child(12){
+        background: #9A9A9A;
 
       }
-      &:nth-child(15){
-        background: #9A9A9A;
+      &:nth-child(14){
+        background: #A9A9A9;
       }
     }
   }
